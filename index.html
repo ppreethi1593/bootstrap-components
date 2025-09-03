@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Accordion</title>
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- fav Icon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <!-- font font-awesome cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                        <div class="container-fluid">
+                            <!-- Brand -->
+                            <a class="navbar-brand" href="#"> My Website </a>
+                            <!-- Toggle for mobile -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav ms-auto">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">About</a>
+                                    </li>
+
+                                    <!-- Dropdown -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown">
+                                            Services
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                                            <li><a class="dropdown-item" href="#">Development</a></li>
+                                            <li><a class="dropdown-item" href="#">SEO</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Contact</a>
+                                    </li>
+
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search here..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-light" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/MainBefore.jpg" class="d-block w-100" alt="image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/MainBefore.jpg" class="d-block w-100" alt="image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/MainBefore.jpg" class="d-block w-100" alt="image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="text-center mb-3">Progress Bar</h2>
+                    <!-- progress bar -->
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 25%">25%</div>
+                    </div>
+                    <!-- accordion -->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Bootstrap?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Bootstrap is a free front-end framework for creating responsive and
+                                    mobile-first websites using HTML, CSS, and JavaScript.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                       What is an Accordion?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        An accordion is a vertically stacked set of collapsible panels. It is used
+                                    to show and hide sections of related content.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                      Why use Accordion?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Accordions help organize content into sections, making the page cleaner and easier
+                                    to read. Users can expand only what they need.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- modal -->
+                        <div class="container">
+                            <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Open Modal
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header bg-primary text-white">
+                                            <h5 class="modal-title">Welcome!</h5>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p class="mb-2">This is a clean Bootstrap modal example.</p>
+                                            <p>You can use it for:</p>
+                                            <ul>
+                                                <li>Login / Sign Up</li>
+                                                <li>Confirmation Messages</li>
+                                                <li>Alerts & Notifications</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Confirm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- table -->
+
+                        <div class="table">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h2 class="text-center mb-4">Table</h2>
+                                        <table class="table table-bordered text-center table-primary">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="8" class="text-center bg-info text-white"> STUDENT MARK
+                                                        LIST</th>
+                                                </tr>
+                                                <tr class="table-secondary">
+                                                    <th scope="col">S.NO</th>
+                                                    <th scope="col">NAME</th>
+                                                    <th scope="col">TAM</th>
+                                                    <th scope="col">ENG</th>
+                                                    <th scope="col">MAT</th>
+                                                    <th scope="col">SCI</th>
+                                                    <th scope="col">SOC</th>
+                                                    <th scope="col">TOTAL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>INBA</td>
+                                                    <td>80</td>
+                                                    <td>90</td>
+                                                    <td>70</td>
+                                                    <td>80</td>
+                                                    <td>98</td>
+                                                    <td class="bg-success fw-bold">418</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>INIYA</td>
+                                                    <td>80</td>
+                                                    <td>80</td>
+                                                    <td>70</td>
+                                                    <td>90</td>
+                                                    <td>80</td>
+                                                    <td class="fw-bold">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>SURESH</td>
+                                                    <td>80</td>
+                                                    <td>90</td>
+                                                    <td>70</td>
+                                                    <td>85</td>
+                                                    <td>85</td>
+                                                    <td rowspan="2" class="fw-bold">410</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="table-secondary fw-bold">
+                                                <tr>
+                                                    <th colspan="2">SUB. TOTAL</th>
+                                                    <td>240</td>
+                                                    <td>260</td>
+                                                    <td>210</td>
+                                                    <td>255</td>
+                                                    <td>268</td>
+                                                    <td>1228</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CRUD Table -->
+                        <div class="crud">
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <h2 class="text-center mb-4">CRUD Table</h2>
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-dark text-white">New Record</div>
+                                        <div class="card-body">
+                                            <!-- Create Form -->
+                                            <form action="create" method="post" class="row g-3">
+                                                <div class="col-md-3 col-sm-2 col-lg-3">
+                                                    <input type="text" name="name" class="form-control"
+                                                        placeholder="Name" required>
+                                                </div>
+                                                <div class="col-md-3 col-sm-2 col-lg-3">
+                                                    <input type="email" name="email" class="form-control"
+                                                        placeholder="Email" required>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-lg-3">
+                                                    <input type="number" name="age" class="form-control"
+                                                        placeholder="Age" required>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-lg-3">
+                                                    <button type="submit" class="btn btn-primary w-100">Add</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="add d-flex justify-content-center "> <!-- row-2 -->
+                                    <table class="table table-bordered table-striped text-center align-middle">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Age</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody><!--  Row (data from backend) -->
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Preethi</td>
+                                                <td>preethi@example.com</td>
+                                                <td>25</td>
+                                                <td>
+                                                    <!-- Edit -->
+                                                    <form action="#" method="post" class="d-inline">
+                                                        <button type="submit"
+                                                            class="btn btn-warning btn-sm">Edit</button>
+                                                    </form>
+                                                    <!-- Delete -->
+                                                    <form action="#" method="post" class="d-inline">
+                                                        <button type="submit"
+                                                            class="btn btn-danger btn-sm">Delete</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form -->
+                        <div class="form py-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="card  pb-5 px-5">
+                                            <div class="cardheader">
+                                                <h1 class="text-center pb-3">FeedBack</h1>
+                                            </div>
+                                            <div class="cardBody">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Enter Your
+                                                        Name</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="name@example.com">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Write
+                                                        your message
+                                                        here</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                </div>
+                                                <div class="d-flex justify-content-center mt-4">
+                                                    <button type="submit"
+                                                        class="btn btn-primary mb-3 text-center">submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                            crossorigin="anonymous"></script>
+</body>
+
+</html>
